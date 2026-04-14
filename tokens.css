@@ -1,0 +1,81 @@
+/* ============================================================
+   tokens.css — Design Tokens & Thèmes
+   Source unique de vérité pour toutes les variables visuelles
+   ============================================================ */
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap');
+
+/* ── Thème Jour : "Asphalte Solaire" (Neumorphisme léger) ── */
+:root {
+  /* Fonds */
+  --bg:           #F0F2F5;
+  --bg-card:      #FFFFFF;
+  --bg-inset:     #E8EAED;
+
+  /* Texte */
+  --text:         #1C1E21;
+  --text-muted:   #65676B;
+  --text-faint:   #BEC3C9;
+
+  /* Bordures */
+  --border:       #DDE1E7;
+  --border-glass: rgba(0, 0, 0, 0.06);
+
+  /* Ombres neumorphiques */
+  --shadow-out:   4px 4px 10px rgba(0,0,0,0.10), -4px -4px 10px rgba(255,255,255,0.85);
+  --shadow-in:    inset 3px 3px 7px rgba(0,0,0,0.10), inset -3px -3px 7px rgba(255,255,255,0.85);
+  --shadow-card:  0 2px 8px rgba(0,0,0,0.07);
+
+  /* Flou glass */
+  --blur:         blur(0px);
+
+  /* ── Palette Signalétique ── */
+  --clr-primary:  #F5A623;   /* Orange Travaux */
+  --clr-blue:     #0057B8;   /* Bleu Panneau */
+  --clr-green:    #2EAD4B;   /* Vert Feu Vert */
+  --clr-red:      #D93025;   /* Rouge Alerte */
+  --clr-purple:   #8B46C1;   /* Violet Classique */
+  --clr-cyan:     #0597A7;   /* Cyan Info */
+
+  /* ── Typographie ── */
+  --font-ui:      'Barlow Condensed', 'Segoe UI', sans-serif;
+  --font-mono:    'JetBrains Mono', 'Courier New', monospace;
+
+  /* ── Rayons ── */
+  --r-sm:  8px;
+  --r-md:  12px;
+  --r-lg:  18px;
+  --r-xl:  25px;
+  --r-full: 9999px;
+
+  /* ── Transitions ── */
+  --t-fast:   0.15s ease;
+  --t-normal: 0.25s ease;
+  --t-slow:   0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* ── Thème Nuit : "Nuit Turbo" (Glassmorphisme Cyberpunk) ── */
+body.dark {
+  --bg:           #090C12;
+  --bg-card:      rgba(18, 24, 35, 0.72);
+  --bg-inset:     rgba(0, 0, 0, 0.45);
+
+  --text:         #E4ECF7;
+  --text-muted:   #7A8899;
+  --text-faint:   #3D4A5C;
+
+  --border:       rgba(255, 255, 255, 0.08);
+  --border-glass: rgba(255, 255, 255, 0.06);
+
+  --shadow-out:   0 8px 32px rgba(0,0,0,0.55);
+  --shadow-in:    inset 2px 2px 6px rgba(0,0,0,0.8);
+  --shadow-card:  0 4px 20px rgba(0,0,0,0.4);
+
+  --blur:         blur(14px);
+
+  --clr-primary:  #FF9F00;
+  --clr-blue:     #00D4FF;
+  --clr-green:    #00F566;
+  --clr-red:      #FF3131;
+  --clr-purple:   #C026FE;
+  --clr-cyan:     #00D4FF;
+}
